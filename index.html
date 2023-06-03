@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M1 Tracker</title>
+    <!--Favicon icon on page title-->
+    <link rel="icon" type="image/x-icon" href="mp1images/favicon.ico">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CDN--> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Icon BS--> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    
+
+    <style>
+        * {
+            font-family: calibri;
+            font-size: small;
+        }
+    </style>
+
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar fixed-bottom bg-dark bg-gradient m-0 py-0">
+        <div class="container-xxl">
+            <div class="col-xxl-2">
+                <ul class="nav input-group input-group-sm">
+                    <input type="text" class="form-control" aria-label="search" aria-describedby="searchbox" placeholder="Search...">
+                    <span class="input-group-text" id="searchbox">
+                        <button class="btn btn-sm m-0 p-0" type="button" id="searchbox">
+                            <i class="bi bi-google"></i>
+                        </button>
+                    </span>
+                </ul>
+            </div> 
+            <div class="col">  
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#"><small>Checklist</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#"><small>Calculator</small></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#"><small>Notepad</small></a>
+                    </li>
+                </ul>
+            </div>     
+        </div>
+    </nav>
+
+    
+    <div class="row " id="mainpanel">
+        <div class="col-lg-9 g-0">
+            <div class="row">
+                <!--Header Display left Goal reminders and right Infographic-->
+                <div class="container-fluid p-0">
+                    <div id="GoalReminders" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="mp1images/indexbg.jpg" alt="" style="width:100%;">
+                                <div class="carousel-caption text-start ">
+                                    <p class="display-1 fw-bold"> WELCOME </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="mp1images/lifeexpectancy.jpg" alt="" style="width:100%;">
+                                <div class="carousel-caption text-start ">
+                                    <p class="display-7"> <!--  quote / reminder-->  </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="mp1images/ampleprep.JPG" alt="" style="width:100%;">
+                                <div class="carousel-caption text-start ">
+                                    <p class="display-7"> <!--  quote / reminder--> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#GoalReminders" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#GoalReminders" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div> <!--Header end-->
+                
+                <!--Main Section-->
+                <div class="row ms-4" >
+                    <div class="col-lg-2 g-0 text-nowrap">
+                        <div class="container-lg g-0 pt-3">
+                            <div class="row g-0">
+                                <div class="container text-center">
+                                   <span class="tultip" data-bs-placement="bottom" title="BSP10piso">
+                                    <img src="mp1images/logo.jpg" class="img-fluid" width="170" height="150" alt="BSP10coin">
+                                    </span>
+                                </div>
+                                <div class="card fw-light border-0 g-0" > 
+                                    <div class="pt-2 text-center"> <Small> Date: May 30, 2023 </Small></div>
+                                </div>
+                                <!--Checklist-->
+                                <div class="container-fluid bg-light fw-semibold pb-2 pe-1 text-center g-0">
+                                        <div class="card border-0">
+                                            <div class="card-header text-muted ">
+                                                <span><small><i class="bi bi-list-check"></i> 
+                                                     Checklist</small> </span></div>
+                                            <div class="card-body bg-light text-dark m-0 p-0">
+                                                <div class="input-group input-group-sm m-0 p-0">
+                                                    <div class="input-group-text ">
+                                                    <input class="form-check-input " type="checkbox" aria-label="Goalcheckbox">
+                                                    </div>
+                                                    <input type="text" class="form-control bg-light m-0 p-0"  aria-label="Goalinput">
+                                                </div>
+                                                <div class="input-group input-group-sm m-0 p-0">
+                                                    <div class="input-group-text ">
+                                                    <input class="form-check-input " type="checkbox" aria-label="Goalcheckbox">
+                                                    </div>
+                                                    <input type="text" class="form-control bg-light m-0 p-0"  aria-label="Goalinput">
+                                                </div>  
+                                                <div class="input-group input-group-sm m-0 p-0">
+                                                    <div class="input-group-text ">
+                                                    <input class="form-check-input " type="checkbox" aria-label="Goalcheckbox">
+                                                    </div>
+                                                    <input type="text" class="form-control bg-light m-0 p-0"  aria-label="Goalinput">
+                                                </div>  
+                                                <div class="input-group input-group-sm m-0 p-0">
+                                                    <div class="input-group-text ">
+                                                    <input class="form-check-input " type="checkbox" aria-label="Goalcheckbox">
+                                                    </div>
+                                                    <input type="text" class="form-control bg-light m-0 p-0"  aria-label="Goalinput">
+                                                </div>  
+                                                <div class="input-group input-group-sm m-0 p-0">
+                                                    <div class="input-group-text ">
+                                                    <input class="form-check-input " type="checkbox" aria-label="Goalcheckbox">
+                                                    </div>
+                                                    <input type="text" class="form-control bg-light m-0 p-0"  aria-label="Goalinput">
+                                                </div>  
+                                                <span> 
+                                                    <!--Tooltip-->
+                                                    <span class="tultip" data-bs-placement="bottom" title="Add another goal or task">
+                                                        <button class="btn btn-block border-top border-bottom border-1 my-0 py-0" style="font-size: small;" type="button">
+                                                        <i class="bi bi-plus"></i> <small> List Item </small>
+                                                    </button>
+                                                    </span>
+                                                </span> 
+                                            </div>
+                                        </div>
+                                </div> <!--Checklist end-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col p-0 pe-4 pb-5" style="color:#1f497d ;">
+                        <!--Tab Content Display-->
+                        <div class="container-fluid my-3 ms-2 g-0" style="height:auto;">
+                            <nav> <!--Panel navigation-->
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link text-light active pt-0 pb-0 mt-0" style="background-color: #1f497d ;" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" 
+                                        type="button" role="tab" aria-controls="home" aria-selected="true">
+                                        <span><p class="text-reset fw-semibold m-1 p-0"><small>
+                                            <i class="bi bi-house-gear-fill"></i> HOME</small></p></span>
+                                    </button>
+                                    <button class="nav-link pt-0 pb-0 mt-0 text-reset fw-semibold" id="budgetcalc-tab" data-bs-toggle="tab" data-bs-target="#budgetcalc" 
+                                        type="button" role="tab" aria-controls="budgetcalc" aria-selected="false">
+                                        <p class="text-reset fw-semibold m-1 p-0"><small>BUDGET CALC</small></p>
+                                    </button>
+                                    <button class="nav-link pt-0 pb-0 mt-0 text-reset fw-semibold" id="cashflow-tab" data-bs-toggle="tab" data-bs-target="#cashflow" 
+                                        type="button" role="tab" aria-controls="cashflow" aria-selected="false">
+                                        <p class="text-reset fw-semibold m-1 p-0"><small>CASHFLOW</small></p>
+                                    </button>
+                                    <button class="nav-link pt-0 pb-0 mt-0 text-reset fw-semibold" id="balsheet-tab" data-bs-toggle="tab" data-bs-target="#balsheet" 
+                                        type="button" role="tab" aria-controls="balsheet" aria-selected="false">
+                                        <p class="text-reset fw-semibold m-1 p-0"><small>BALANCE SHEET</small></p>
+                                    </button>
+                                    <button class="nav-link pt-0 pb-0 mt-0 text-reset fw-semibold" id="insurance-tab" data-bs-toggle="tab" data-bs-target="#insurance" 
+                                        type="button" role="tab" aria-controls="insurance" aria-selected="false">
+                                        <p class="text-reset fw-semibold m-1 p-0"><small>INSURANCE</small></p>
+                                    </button>
+                                </div>
+                            </nav>
+                            <!--Panel dispaly window-->
+                            <div class="tab-content shadow-sm" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                    <h4 class="ms-3 mt-3">Take charge. Be your own personal money manager!</h4>
+                                    <p class="display-7 ms-3 mb-4">Watch the Money Supply video to know about M1.</p>
+                                    <div class="container-lg">
+                                        <div class="row text-center">
+                                            <div >
+                                                <iframe width="330" height="215" src="https://www.youtube.com/embed/t3413csxEtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                            <div >
+                                                <iframe width="230" height="180" src="https://www.youtube.com/embed/PHe0bXAIuk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="230" height="180" src="https://www.youtube.com/embed/B9XGUpQZY38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="230" height="180" src="https://www.youtube.com/embed/xguam0TKMw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="budgetcalc" role="tabpanel" aria-labelledby="budgetcalc-tab" tabindex="0">
+                                    <div>
+                                        <h5 class=" ms-3 mt-3 mb-4">
+                                            Learn how to budget your income.
+                                            <i class="bi bi-piggy-bank" style="font-size: x-large;"></i> </h5>
+                                    </div>
+                                    <div class="container-lg">
+                                        <div class="row text-center">
+                                            <div >
+                                                <iframe width="550" height="430" src="https://www.youtube.com/embed/Hnf5BRh5bdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="cashflow" role="tabpanel" aria-labelledby="cashflow-tab" tabindex="0">
+                                    <div>
+                                        <h5 class=" ms-3 mt-3 mb-4">
+                                            Record the money that comes in and out.
+                                            <i class="bi bi-wallet2" style="font-size: x-large;"></i> </h5>
+                                    </div>
+                                    <div class="container-lg">
+                                        <div class="row text-center">
+                                            <div >
+                                                <iframe width="550" height="430" src="https://www.youtube.com/embed/FA0ACIOzbWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="balsheet" role="tabpanel" aria-labelledby="balsheet-tab" tabindex="0">
+                                    <div>
+                                        <h5 class=" ms-3 mt-3 mb-4">
+                                            List your assets and liabilities to have a clear picture of your financial condition.
+                                            <i class="bi bi-cash-coin" style="font-size: x-large;"></i> </h5>
+                                    </div>
+                                    <div class="container-lg">
+                                        <div class="row text-center">
+                                            <div >
+                                                <iframe width="550" height="430" src="https://www.youtube.com/embed/Zr4CLcAYu80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="tab-pane fade" id="insurance" role="tabpanel" aria-labelledby="insurance-tab" tabindex="0">
+                                    <div>
+                                        <h5 class=" ms-3 mt-3 mb-4">
+                                            Give yourself some measure of protection against life's uncertainties.
+                                            <i class="bi bi-umbrella-fill" style="font-size: x-large;"></i> </h5>
+                                    </div>
+                                    <div class="container-lg">
+                                        <div class="row text-center">
+                                            <div >
+                                                <iframe width="550" height="430" src="https://www.youtube.com/embed/siPVZ8qeXBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>  <!--Tab Content Display end-->
+                    </div>
+                </div> <!--Main Section end-->
+            </div>
+        </div>
+
+        <!--Right Display Section-->
+        <div class="col-lg-3 pb-5 text-nowrap text-center">  
+            <!--Personal Details with form validation-->
+            <div class="container-lg-3 text-center">
+                <form class="row needs-validation border-2 g-1" novalidate>
+                    <div class="row border-start border-2 g-1">
+                        <span class="" id="socialmedia">
+                            <a href="https://www.facebook.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-facebook" data-bs-placement="bottom" title="Facebook"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-instagram" data-bs-placement="bottom" title="Instagram"></i> </a>
+                            <a href="https://www.twitter.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-twitter" data-bs-placement="bottom" title="Twitter"></i> </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-youtube" data-bs-placement="bottom" title="Youtube"></i> </a>
+                            <a href="https://www.linkedin.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-linkedin" data-bs-placement="bottom" title="LinkedIn"></i>  </a>
+                            <a href="https://www.reddit.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-reddit" data-bs-placement="bottom" title="Reddit"></i>  </a>
+                        </span>
+                        <span><p class="mb-1 mt-1 fw-bold"><small>
+                            <i class="bi bi-pencil-square"></i> ENTER YOUR DETAILS</small></p></span>
+                        <div class="input-group input-group-sm mt-0 mb-1">
+                            <span class="input-group-text pb-0 pt-0" id="fullname"><i class="bi bi-person-fill"></i></span>
+                            <input type="text" class="form-control pb-0 pt-0"  style="font-size:small;" placeholder="First name" aria-label="firstname" aria-describedby="fullname">
+                            <input type="text" class="form-control pb-0 pt-0" style="font-size:small;" placeholder="Last name" aria-label="lastname" aria-describedby="fullname">
+                        </div>
+                        <div class="input-group input-group-sm mb-1">
+                            <span class="input-group-text pb-0 pt-0" id="email"><i class="bi bi-envelope-fill"></i></span>
+                            <input type="email" class="form-control pb-0 pt-0" style="font-size:small;" placeholder="sample@example.com" aria-label="emailaddress" aria-describedby="email">
+                        </div>
+                        <!--Validation-->
+                        <div class="input-group input-group-sm mb-1" has-validation>
+                            <span class="input-group-text pb-0 pt-0" id="validationTooltipBirthdatePrepend"><i class="bi bi-balloon-fill"></i></span>
+                            <input type="date" class="form-control pb-0 pt-0" id="validationTooltipBirthdate" aria-describedby="validationTooltipBirthdatePrepend" required>
+                            <div class="invalid-feedback"> Invalid date</div>
+                        </div>
+                    </div>
+                    <!--Cashflow Quadrant-->
+                    <div class="container-lg-3 ">
+                        <div class="card-header text-dark fw-bold" >
+                            <small> Cashflow Quadrant</small>
+                        </div>
+                            <div class="card-body bg-light text-dark">
+                                <div class="input-group input-group-sm justify-content-center">
+                                    <div class="input-group-text pb-0 pt-0">
+                                        <span class="pb-0 pt-0"> 
+                                            <input class="form-check-input" type="checkbox" aria-label="Equadrant"> <small>Employee </small>
+                                            <div class="vr" ></div>
+                                            <input class="form-check-input" type="checkbox" aria-label="SEquadrant"> <small> Self Employed </small>
+                                        </span>
+                                    </div>
+                                    <div class="input-group-text pb-0 pt-0">
+                                        <span> 
+                                            <input class="form-check-input" type="checkbox" aria-label="Iquadrant"> <small> Investor</small> 
+                                            <div class="vr" ></div> 
+                                            <input class="form-check-input" type="checkbox" aria-label="Bquadrant"> <small>Business Owner </small>  
+                                        </span>
+                                    </div>
+                                    <div class="input-group-text pb-0 pt-0">
+                                        <span> <input class="form-check-input" type="checkbox" aria-label="Noquadrant"> <small>Unemployed </small> </span>
+                                    </div>
+                                </div>
+                            </div> 
+                        
+                    </div> 
+                    <!--Validation-->
+                    <div class="input-group has-validation mt-1">
+                        <span class="input-group-text pb-0 pt-0" id="validationTooltipIncomePrepend"> <b> ₱ </b> </span>
+                        <input type="text" class="form-control pb-0 pt-0" placeholder="Your basic income?" aria-describedby="validationTooltipIncomePrepend" required>
+                        <span class="input-group-text pb-0 pt-0" id="validationTooltipIncome"> <small> <b> .00 </b> </small> </span>
+                        <div class="invalid-tooltip">Enter amount</div>
+                    </div> 
+                    <div class="input-group has-validation mt-1">
+                        <span class="input-group-text pb-0 pt-0" id="valdiationTooltipRetAgePrepend"> <small> Sample: 60 </small>  </span>
+                        <input type="number" class="form-control pb-0 pt-0" placeholder="Retirement age?" aria-describedby="validationTooltipRetAgePrepend" required>
+                        <span class="input-group-text pb-0 pt-0" id="salary"> <small> years old </small> </span>
+                        <div class="invalid-tooltip">Enter retirement age</div>
+                    </div> 
+                    <small class="mb-2"> Disclaimer: </small> <br> 
+                    <sup> Clicking submit will not store your information elsewhere. </sup> 
+                    <!--CF Quadrant end-->
+                    <!--Submit and clear button-->
+                    <div class="mt-2"> 
+                        <span>
+                            <span class="tultip" data-bs-placement="left" title="Submit">
+                            <a href="home.html" class="btn btn-block border-top border-bottom border-1 border-success my-0 py-0 ps-2" type="submit">
+                                <i class="bi bi-send text-success"></i> 
+                            </a>
+                            </span>
+                            <span class="tultip" data-bs-placement="right" title="Clear">
+                                <button class="btn btn-block border-top border-bottom border-1 border-danger my-0 py-0 ps-2" type="clear">
+                                <i class="bi bi-trash3 text-danger"></i>  
+                            </button>
+                            </span>
+                        </span> 
+                    </div>
+                </form>
+            </div><!--Personal Details end-->
+
+            <!--FS Overview-->
+            <div class="accordion mt-3" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-opacity-75 py-2 text-light" style="background-color: #1f497d ;" type="button" 
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" 
+                        aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        <small>Retirement Information</small> </button> 
+                    </h2> 
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                        <h3><i class="bi bi-umbrella"></i></h3>
+                        <p>
+                             Table Data
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-opacity-75 py-2 text-light" style="background-color: #3d9b35 ;" type="button" 
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" 
+                        aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <small>Budget Health </small></button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                        <h3><i class="bi bi-plus-slash-minus"></i></h3>
+                        <p>
+                            Table Data
+                        </p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-opacity-75 py-2 text-light" style="background-color: #1f497d ;" type="button" 
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" 
+                        aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        <small>Financial Overview </small></button>
+                    </h2> 
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                        <h3><i class="bi bi-table"></i></h3>
+                        <p>
+                            Table Data
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    
+    
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <script>
+    //   const tooltips = document.querySelectorAll('.tultip')
+    //    tooltips.forEach(t => {
+    //        new bootstrap.Tooltip (t)
+    //    })
+
+        // Disabling form submissions if invalid
+        (() => {
+            'use strict'
+        
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+        
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+        
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
+
+
+
+</body>
+</html>

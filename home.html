@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M1 Tracker</title>
+    <!--Favicon icon on page title-->
+    <link rel="icon" type="image/x-icon" href="mp1images/favicon.ico">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CDN--> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Icon BS--> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+
+    <style>
+        * {
+            font-family: calibri;
+            font-size: small;
+        }
+    </style>
+
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar fixed-bottom bg-dark bg-gradient m-0 py-0">
+        <div class="container-xxl">
+            <div class="col-xxl-2">
+                <ul class="nav input-group input-group-sm">
+                    <input type="text" class="form-control" aria-label="search" aria-describedby="searchbox" placeholder="Search...">
+                    <span class="input-group-text" id="searchbox">
+                        <button class="btn btn-sm m-0 p-0" type="button" id="searchbox">
+                            <i class="bi bi-google"></i>
+                        </button>
+                    </span>
+                </ul>
+            </div> 
+            <div class="col">  
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#"><small>Checklist</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#"><small>Calculator</small></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#"><small>Notepad</small></a>
+                    </li>
+                </ul>
+            </div>     
+        </div>
+    </nav>
+
+    
+    <div class="row " id="mainpanel">
+        <div class="col-lg-9 g-0">
+            <div class="row">
+                <!--Header Display left Goal reminders and right Infographic-->
+                <div class="container-fluid p-0 ">
+                    <div id="GoalReminders" class="carousel slide carousel-fade carousel-dark border-end" data-bs-ride="carousel">
+                        <div class="carousel-inner d-none d-md-block">
+                            <div class="carousel-item active mt-2">
+                                <img src="mp1images/homebgee.jpg" alt="IMG 4" style="width:100%;">
+                                <div class="carousel-caption text-start">
+                                    <p class="fw-light d-inline" style="font-family: monotype corsiva; font-size: large;"> 
+                                        Ten years from now, which decision will I <mark>BE GRATEFUL</mark> I made? </p>  
+                                </div>
+                            </div>
+                            <div class="carousel-item mt-2 ">
+                                <img src="mp1images/homebgee.jpg" alt="IMG 4" style="width:100%;">
+                                <div class="carousel-caption text-start">
+                                    <p class="fw-light d-inline" style="font-family: monotype corsiva; font-size: large;"> 
+                                        Win control over yourself. </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item mt-2 ">
+                                <img src="mp1images/homebgee.jpg" alt="IMG 4" style="width:100%;">
+                                <div class="carousel-caption text-start">
+                                    <p class="fw-light d-inline" style="font-family: monotype corsiva; font-size: large;"> 
+                                        Be strong and courageous, and do the work ... until all the work ... is finished. </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item mt-2 ">
+                                <img src="mp1images/homebgee.jpg" alt="IMG 4" style="width:100%;">
+                                <div class="carousel-caption text-start">
+                                    <p class="fw-light d-inline" style="font-family: monotype corsiva; font-size: large;"> 
+                                        When your mother is old, show her your appreciation. </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item mt-2 ">
+                                <img src="mp1images/homebgee.jpg" alt="IMG 4" style="width:100%;">
+                                <div class="carousel-caption text-start">
+                                    <p class="fw-light d-inline" style="font-family: monotype corsiva; font-size: large;"> 
+                                        Let your father and mother be proud of you; give your mother that happiness. </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item mt-2 ">
+                                <img src="mp1images/homebgee.jpg" alt="IMG 4" style="width:100%;">
+                                <div class="carousel-caption text-start">
+                                    <p class="fw-light d-inline" style="font-family: monotype corsiva; font-size: large;"> 
+                                        <mark>To die is gain.</mark> Make ample preparations. </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div> <!--Header end-->
+                
+                <!--Main Section-->
+                <div class="row ms-4" >
+                    <div class="col-lg-2 g-0 text-nowrap">
+                        <div class="container-lg g-0 pt-3">
+                            <div class="row g-0">
+                                <div class="container text-center">
+                                   <span class="tultip" data-bs-placement="bottom" title="BSP10piso">
+                                    <img src="mp1images/logo.jpg" class="img-fluid" width="170" height="150" alt="BSP10coin">
+                                    </span>
+                                </div>
+                                <div class="card fw-light border-0 g-0" > 
+                                    <div class="pt-2 text-center"> <Small> Date: May 30, 2023 </Small></div>
+                                </div>
+                                <!--Checklist-->
+                                <div class="container-fluid bg-light fw-semibold pb-2 pe-1 text-center g-0">
+                                        <div class="card border-0">
+                                            <div class="card-header text-muted ">
+                                                <span><small><i class="bi bi-list-check"></i> 
+                                                     Checklist</small> </span></div>
+                                            <div class="card-body bg-light text-dark m-0 p-0">
+                                                <div class="input-group input-group-sm m-0 p-0">
+                                                    <div class="input-group-text ">
+                                                    <input class="form-check-input " type="checkbox" aria-label="Goalcheckbox">
+                                                    </div>
+                                                    <input type="text" class="form-control bg-light m-0 p-0"  aria-label="Goalinput">
+                                                </div>
+                                                <div class="input-group input-group-sm m-0 p-0">
+                                                    <div class="input-group-text ">
+                                                    <input class="form-check-input " type="checkbox" aria-label="Goalcheckbox">
+                                                    </div>
+                                                    <input type="text" class="form-control bg-light m-0 p-0"  aria-label="Goalinput">
+                                                </div>  
+                                                <div class="input-group input-group-sm m-0 p-0">
+                                                    <div class="input-group-text ">
+                                                    <input class="form-check-input " type="checkbox" aria-label="Goalcheckbox">
+                                                    </div>
+                                                    <input type="text" class="form-control bg-light m-0 p-0"  aria-label="Goalinput">
+                                                </div>  
+                                                <div class="input-group input-group-sm m-0 p-0">
+                                                    <div class="input-group-text ">
+                                                    <input class="form-check-input " type="checkbox" aria-label="Goalcheckbox">
+                                                    </div>
+                                                    <input type="text" class="form-control bg-light m-0 p-0"  aria-label="Goalinput">
+                                                </div>  
+                                                <div class="input-group input-group-sm m-0 p-0">
+                                                    <div class="input-group-text ">
+                                                    <input class="form-check-input " type="checkbox" aria-label="Goalcheckbox">
+                                                    </div>
+                                                    <input type="text" class="form-control bg-light m-0 p-0"  aria-label="Goalinput">
+                                                </div>  
+                                                <span> 
+                                                    <!--Tooltip-->
+                                                    <span class="tultip" data-bs-placement="bottom" title="Add another goal or task">
+                                                        <button class="btn btn-block border-top border-bottom border-1 my-0 py-0" style="font-size: small;" type="button">
+                                                        <i class="bi bi-plus"></i> <small> List Item </small>
+                                                    </button>
+                                                    </span>
+                                                </span> 
+                                            </div>
+                                        </div>
+                                </div> <!--Checklist end-->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col p-0 pe-4 pb-5" style="color:#1f497d ;">
+                        <!--Tab Content Display-->
+                        <div class="container-fluid my-3 ms-2 g-0" style="height:auto;">
+                            <nav> <!--Panel navigation-->
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link text-reset pt-0 pb-0 mt-0" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" 
+                                        type="button" role="tab" aria-controls="home" aria-selected="true">
+                                        <span><p class="text-reset fw-semibold m-1 p-0"><small>
+                                            <i class="bi bi-house-gear-fill"></i> HOME</small></p></span>
+                                    </button>
+                                    <button class="nav-link active text-light pt-0 pb-0 mt-0 fw-semibold" style="background-color: #1f497d ;" id="budgetcalc-tab" data-bs-toggle="tab" data-bs-target="#budgetcalc" 
+                                        type="button" role="tab" aria-controls="budgetcalc" aria-selected="false">
+                                        <p class="fw-semibold m-1 p-0"><small>BUDGET CALC</small></p>
+                                    </button>
+                                    <button class="nav-link pt-0 pb-0 mt-0 text-reset fw-semibold" id="cashflow-tab" data-bs-toggle="tab" data-bs-target="#cashflow" 
+                                        type="button" role="tab" aria-controls="cashflow" aria-selected="false">
+                                        <p class="text-reset fw-semibold m-1 p-0"><small>CASHFLOW</small></p>
+                                    </button>
+                                    <button class="nav-link pt-0 pb-0 mt-0 text-reset fw-semibold" id="balsheet-tab" data-bs-toggle="tab" data-bs-target="#balsheet" 
+                                        type="button" role="tab" aria-controls="balsheet" aria-selected="false">
+                                        <p class="text-reset fw-semibold m-1 p-0"><small>BALANCE SHEET</small></p>
+                                    </button>
+                                    <button class="nav-link pt-0 pb-0 mt-0 text-reset fw-semibold" id="insurance-tab" data-bs-toggle="tab" data-bs-target="#insurance" 
+                                        type="button" role="tab" aria-controls="insurance" aria-selected="false">
+                                        <p class="text-reset fw-semibold m-1 p-0"><small>INSURANCE</small></p>
+                                    </button>
+                                </div>
+                            </nav>
+                            <!--Panel dispaly window-->
+                            <div class="tab-content shadow-sm" id="nav-tabContent">
+                                <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                    <h4 class="ms-3 mt-3">Take charge. Be your own personal money manager!</h4>
+                                    <p class="display-7 ms-3 mb-4">Watch the Money Supply video to know about M1.</p>
+                                    <div class="container-lg">
+                                        <div class="row text-center">
+                                            <div >
+                                                <iframe width="330" height="215" src="https://www.youtube.com/embed/t3413csxEtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                            <div >
+                                                <iframe width="230" height="180" src="https://www.youtube.com/embed/PHe0bXAIuk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="230" height="180" src="https://www.youtube.com/embed/B9XGUpQZY38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="230" height="180" src="https://www.youtube.com/embed/xguam0TKMw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="230" height="180" src="https://www.youtube.com/embed/Hnf5BRh5bdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="230" height="180" src="https://www.youtube.com/embed/FA0ACIOzbWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="230" height="180" src="https://www.youtube.com/embed/Zr4CLcAYu80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <iframe width="230" height="180" src="https://www.youtube.com/embed/siPVZ8qeXBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show active" id="budgetcalc" role="tabpanel" aria-labelledby="budgetcalc-tab" tabindex="0">
+                                    <div class="col">
+                                        <h5 class=" ms-3 mt-3 mb-4">
+                                            Allocate your income.
+                                            <i class="bi bi-piggy-bank" style="font-size: x-large;"></i> </h5>
+                                    </div> 
+                                    <div class="container-fluid pb-3">
+                                        <div class="row g-0">
+                                            <!--Basic needs-->
+                                            <div class="col card g-0"> 
+                                                <h5 class=" mt-3 mb-4">
+                                                <div class="row g-0">
+                                                    <div class="col form-floating g-0">
+                                                        <select class="form-select" id="basicneeds">
+                                                            <option selected></option>
+                                                            <option value="1">Food</option>
+                                                            <option value="2">Rent</option>
+                                                            <option value="3">Internet</option>
+                                                            <option value="4">Groceries</option>
+                                                            <option value="5">Transportation</option>
+                                                        </select>
+                                                        <label for="basicneeds" >Basic Needs</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-floating">
+                                                            <input type="number" class="form-control" id="basicneeds">
+                                                            <label for="basicneeds">Budget Allocation</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row 2 g-0">
+                                                    <div class="col">
+                                                        <select class="form-select" id="basicneeds">
+                                                            <option selected></option>
+                                                            <option value="1">Food</option>
+                                                            <option value="2">Rent</option>
+                                                            <option value="3">Internet</option>
+                                                            <option value="4">Groceries</option>
+                                                            <option value="5">Transportation</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="floatingInputGrid">
+                                                    </div>
+                                                </div>
+                                                <div class="row 3 g-0">
+                                                    <div class="col">
+                                                        <select class="form-select" id="basicneeds">
+                                                            <option selected></option>
+                                                            <option value="1">Food</option>
+                                                            <option value="2">Rent</option>
+                                                            <option value="3">Internet</option>
+                                                            <option value="4">Groceries</option>
+                                                            <option value="5">Transportation</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="floatingInputGrid">
+                                                    </div>
+                                                </div>
+                                                <div class="row 4 g-0">
+                                                    <div class="col">
+                                                        <select class="form-select" id="basicneeds">
+                                                            <option selected></option>
+                                                            <option value="1">Food</option>
+                                                            <option value="2">Rent</option>
+                                                            <option value="3">Internet</option>
+                                                            <option value="4">Groceries</option>
+                                                            <option value="5">Transportation</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="floatingInputGrid">
+                                                    </div>
+                                                </div>
+                                                <div class="row 5 g-0">
+                                                    <div class="col">
+                                                        <select class="form-select" id="basicneeds">
+                                                            <option selected></option>
+                                                            <option value="1">Food</option>
+                                                            <option value="2">Rent</option>
+                                                            <option value="3">Internet</option>
+                                                            <option value="4">Groceries</option>
+                                                            <option value="5">Transportation</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="floatingInputGrid">
+                                                    </div>
+                                                </div>
+                                                <!--Add item and clear field-->
+                                                <div class="col mt-2 text-center"> 
+                                                    <span >
+                                                        <span class="tultip" data-bs-placement="left" title="Add need">
+                                                        <button class="btn btn-block border-top border-bottom border-1  my-0 py-0 ps-2" type="submit">
+                                                            <i class="bi bi-plus"> Add a need</i> 
+                                                        </button>
+                                                        </span>
+                                                        <span class="tultip" data-bs-placement="right" title="Clear">
+                                                            <button class="btn btn-block border-top border-bottom border-1  my-0 py-0 ps-2" type="clear">
+                                                            <i class="bi bi-trash3"> Clear field</i>  
+                                                        </button>
+                                                        </span>
+                                                    </span> 
+                                                </div>
+                                                <!--Total summary-->
+                                                <div class="m-4">
+                                                    <table class="table table-sm table-striped mt-5">
+                                                        <tr>
+                                                            <th scope="row">TOTAL</th>
+                                                            <td>0,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">% of Salary</th>
+                                                            <td>0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Allocation</th>
+                                                            <td>0,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Over Allocation</th>
+                                                            <td>0,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Free Cash</th>
+                                                            <td>0,000</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!--Obligations-->
+                                            <div class="col card g-0"> 
+                                                <h5 class=" mt-3 mb-4">
+                                                <div class="row g-0">
+                                                    <div class="col form-floating g-0">
+                                                        <select class="form-select" id="obligations">
+                                                            <option selected></option>
+                                                            <option value="1">Parents Allowance</option>
+                                                            <option value="2">Parents Insurance</option>
+                                                            <option value="3">My Insurance</option>
+                                                            <option value="4">Emergency fund</option>
+                                                        </select>
+                                                        <label for="obligations" >Obligations</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-floating">
+                                                            <input type="number" class="form-control" id="obligations">
+                                                            <label for="obligations">Budget Allocation</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row 2 g-0">
+                                                    <div class="col">
+                                                        <select class="form-select" id="obligations">
+                                                            <option selected></option>
+                                                            <option value="1">Parents Allowance</option>
+                                                            <option value="2">Parents Insurance</option>
+                                                            <option value="3">My Insurance</option>
+                                                            <option value="4">Emergency fund</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="obligations">
+                                                    </div>
+                                                </div>
+                                                <div class="row 3 g-0">
+                                                    <div class="col">
+                                                        <select class="form-select" id="obligations">
+                                                            <option selected></option>
+                                                            <option value="1">Parents Allowance</option>
+                                                            <option value="2">Parents Insurance</option>
+                                                            <option value="3">My Insurance</option>
+                                                            <option value="4">Emergency fund</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="obligations">
+                                                    </div>
+                                                </div>
+                                                <div class="row 4 g-0">
+                                                    <div class="col">
+                                                        <select class="form-select" id="obligations">
+                                                            <option selected></option>
+                                                            <option value="1">Parents Allowance</option>
+                                                            <option value="2">Parents Insurance</option>
+                                                            <option value="3">My Insurance</option>
+                                                            <option value="4">Emergency fund</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="obligations">
+                                                    </div>
+                                                </div>
+                                                
+                                                <!--Add item and clear field-->
+                                                <div class="col mt-2 text-center"> 
+                                                    <span >
+                                                        <span class="tultip" data-bs-placement="left" title="Add need">
+                                                        <button class="btn btn-block border-top border-bottom border-1  my-0 py-0 ps-2" type="submit">
+                                                            <i class="bi bi-plus"> Add a need</i> 
+                                                        </button>
+                                                        </span>
+                                                        <span class="tultip" data-bs-placement="right" title="Clear">
+                                                            <button class="btn btn-block border-top border-bottom border-1  my-0 py-0 ps-2" type="clear">
+                                                            <i class="bi bi-trash3"> Clear field</i>  
+                                                        </button>
+                                                        </span>
+                                                    </span> 
+                                                </div>
+                                                <!--Total summary-->
+                                                <div class="p-4">
+                                                    <table class="table table-sm table-striped mt-5">
+                                                        <tr>
+                                                            <th scope="row">TOTAL</th>
+                                                            <td>0,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">% of Salary</th>
+                                                            <td>0%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Allocation</th>
+                                                            <td>0,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Over Allocation</th>
+                                                            <td>0,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Free Cash</th>
+                                                            <td>0,000</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!--Leisure / Discretionary-->
+                                            <div class="col card">
+                                                <h5 class=" mt-3 mb-4">
+                                                <div class="row g-0">
+                                                    <div class="col form-floating g-0">
+                                                        <input type="text" class="form-control" id="leisure">
+                                                        <label for="leisure">Discretionary</label>
+                                                    </div>
+                                                    <div class="col form-floating g-0">
+                                                        <input type="number" class="form-control" id="leisure">
+                                                        <label for="leisure">Budget Allocation</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row 2 g-0">
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" id="leisure">
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="leisure">
+                                                    </div>
+                                                </div>
+                                                <div class="row 3 g-0">
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" id="leisure">
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="leisure">
+                                                    </div>
+                                                </div>
+                                                <div class="row 4 g-0">
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" id="leisure">
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="leisure">
+                                                    </div>
+                                                </div>
+                                                    
+                                                    <!--Add item and clear field-->
+                                                    <div class="col mt-2 text-center"> 
+                                                        <span >
+                                                            <span class="tultip" data-bs-placement="left" title="Add need">
+                                                            <button class="btn btn-block border-top border-bottom border-1  my-0 py-0 ps-2" type="submit">
+                                                                <i class="bi bi-plus"> Add a need</i> 
+                                                            </button>
+                                                            </span>
+                                                            <span class="tultip" data-bs-placement="right" title="Clear">
+                                                                <button class="btn btn-block border-top border-bottom border-1  my-0 py-0 ps-2" type="clear">
+                                                                <i class="bi bi-trash3"> Clear field</i>  
+                                                            </button>
+                                                            </span>
+                                                        </span> 
+                                                    </div>
+                                                    <!--Total summary-->
+                                                    <div class="p-4">
+                                                        <table class="table table-sm table-striped mt-5">
+                                                            <tr>
+                                                                <th scope="row">TOTAL</th>
+                                                                <td>0,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">% of Salary</th>
+                                                                <td>0%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Allocation</th>
+                                                                <td>0,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Over Allocation</th>
+                                                                <td>0,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Free Cash</th>
+                                                                <td>0,000</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="cashflow" role="tabpanel" aria-labelledby="cashflow-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col ">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                <h5 class=" ">
+                                                    CASH Inflow input
+                                                </div>
+                                                <div class="col ">
+                                                    <div class="card">
+                                                    Cash on hand Summary
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container pb-3">
+                                            <div class="col card">
+                                                Cash Inflow table
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col ">
+                                            <div class="col-7">
+                                                <h5 class=" ">
+                                                    CASH Outflow input
+                                            </div>
+                                        </div>
+                                        <div class="container pb-3">
+                                            <div class="col card">
+                                                Cash Outflow table
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="balsheet" role="tabpanel" aria-labelledby="balsheet-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class=" ms-3 mt-3 mb-4">
+                                                ASSET
+                                            <div class="col card">
+                                                    Table
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h5 class=" ms-3 mt-3 mb-4">
+                                                Liabilities
+                                            <div class="col card">
+                                                    Table
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div class="tab-pane fade" id="insurance" role="tabpanel" aria-labelledby="insurance-tab" tabindex="0">
+                                    <div>
+                                        <h5 class=" ms-3 mt-3 mb-4">
+                                            Give yourself some measure of protection against life's uncertainties.
+                                            <i class="bi bi-umbrella-fill" style="font-size: x-large;"></i> </h5>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="button group">
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle text-dark" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                                              Add a Plan
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><button class="btn btn-sm btn-link text-dark link-underline-light" type="button">My Insurance</button></li>
+                                                <li><button class="btn btn-sm btn-link text-dark link-underline-light" type="button">Family Insurance</button></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><button class="btn btn-sm btn-link text-dark link-underline-light" type="button">Delete a Plan</button></li>
+                                            </ul>
+                                        </div>                                             
+                                        <button class="btn btn-sm btn-outline-secondary text-dark" type="button">Record Payment</button>
+                                        <button class="btn btn-sm btn-outline-secondary text-dark" type="button">Plan Diagram</button>
+                                    </div> 
+                                    <div class="container-lg"> 
+                                        <h5 class=" ms-3 mt-3 mb-4">
+                                            My Insurance
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr> 
+                                                    <th>Plan Name</th>
+                                                    <th>Policy #</th>
+                                                    <th>Issue Date</th>
+                                                    <th>Insurance Coverage</th>
+                                                    <th>Payment Mode</th>
+                                                    <th>Payment Amount</th>
+                                                    <th>Maturity Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody> <!--make per plan collapsible for further info-->
+                                                <tr>
+                                                    <th >Plan 1</th>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Plan 2</th>
+                                                    <td> Sample </td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Plan 3</th>
+                                                    <td> Sample </td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>  
+                                    <div class="container-lg"> 
+                                        <h5 class=" ms-3 mt-3 mb-4">
+                                            Family Insurance
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr> 
+                                                    <th>Plan Name</th>
+                                                    <th>Policy #</th>
+                                                    <th>Issue Date</th>
+                                                    <th>Insurance Coverage</th>
+                                                    <th>Payment Mode</th>
+                                                    <th>Payment Amount</th>
+                                                    <th>Maturity Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody> <!--make per plan collapsible for further info-->
+                                                <tr>
+                                                    <th >Family 1</th>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Family 2</th>
+                                                    <td> Sample </td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Family 3</th>
+                                                    <td> Sample </td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                    <td > Sample</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>  
+                                    <div class="container-lg"> 
+                                        <h5 class=" ms-3 mt-3 mb-4">
+                                            Actual Payment
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr> 
+                                                    <th>Date</th>
+                                                    <th>Plan 1</th>
+                                                    <th>Plan 2</th>
+                                                    <th>Plan 3</th>
+                                                    <th>Family 1</th>
+                                                    <th>Family 2</th>
+                                                    <th>Family 3</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody> <!--make per plan collapsible for further info-->
+                                                <tr>
+                                                    <td > Date</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                </tr>
+                                                <tr>
+                                                    <td > Date</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                </tr>
+                                                <tr>
+                                                    <td > Date</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                    <td > Amount</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>  <!--Tab Content Display end-->
+                    </div>
+                </div> <!--Main Section end-->
+            </div>
+        </div>
+
+        <!--Right Display Section-->
+        <div class="col-lg-3 pb-5 text-nowrap">  
+            <!--Home Sidebar Personal info summary-->
+            <div class="container-lg-2">
+                <div class="row border-start g-1">
+                    <span class="text-center" id="socialmedia">
+                        <a href="https://www.facebook.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-facebook" data-bs-placement="bottom" title="Facebook"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-instagram" data-bs-placement="bottom" title="Instagram"></i> </a>
+                            <a href="https://www.twitter.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-twitter" data-bs-placement="bottom" title="Twitter"></i> </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-youtube" data-bs-placement="bottom" title="Youtube"></i> </a>
+                            <a href="https://www.linkedin.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-linkedin" data-bs-placement="bottom" title="LinkedIn"></i>  </a>
+                            <a href="https://www.reddit.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-reddit" data-bs-placement="bottom" title="Reddit"></i>  </a>
+                    </span> 
+                    <div class="text-center">
+                        <p class="display-7 mt-3 pb-0 mb-0 fw-bold">HELLO,</p>
+                        <h5 class="display-6 fw-bold"> Angeline </h5>
+                        <p class="fw-bold"> AGE: 34 </p>
+                    </div>
+                    <div class="px-3">    
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td >Cashflow Quadrant:</td>
+                                    <td >Employee</td>
+                                </tr>
+                                <tr>
+                                    <td>Basic Income:</td>
+                                    <td>30,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Retirement Age:</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                        <span class="text-center">
+                            <a href="#sidebar" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar" class="btn btn-block border-top border-bottom border-1 border-success my-0 py-0 ps-2" >
+                                <i class="bi bi-pencil-square"></i> Edit details
+                            </a>    
+                        </span> 
+                </div>
+            </div><!--Personal info summary end-->
+
+            <!--FS Overview-->
+            <div class="container-lg-2">
+                <div class="accordion mt-3 g-0 " id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button py-2 text-light" style="background-color: #1f497d ;" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" 
+                            aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Retirement Information </button> 
+                        </h2> 
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body p-2" >
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td>Remaining working years:</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Income value at retirement:</td>
+                                            <td>83,174.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Retirement amount needed:</td>
+                                            <td>19,961,782.45</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-opacity-75 py-2 text-light" style="background-color: #3d9b35 ;" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" 
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Budget Health </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body p-2">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td>Basic needs:</td>
+                                            <td> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Obligations:</td>
+                                            <td> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Leisure:</td>
+                                            <td> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-opacity-75 py-2 text-light" style="background-color: #1f497d ;" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" 
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Financial Overview </button>
+                        </h2> 
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body p-2">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td>Available Cash:</td>
+                                            <td> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Investments:</td>
+                                            <td> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Death Money:</td>
+                                            <td> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Liabilities:</td>
+                                            <td> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Estate Tax:</td>
+                                            <td> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Offcanvas-->
+        <div class="offcanvas offcanvas-end" tableindex="-1" id="sidebar" aria-labeledby="sidebar-label">
+        <form class="row needs-validation text-center" novalidate>
+            <div class="row border-start">
+                <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <span><p class="mb-1 mt-4 fw-bold"><small>
+                    <i class="bi bi-pencil-square"></i> ENTER YOUR DETAILS</small></p></span>
+                <div class="input-group input-group-sm mt-0 mb-1">
+                    <span class="input-group-text pb-0 pt-0" id="fullname"><i class="bi bi-person-fill"></i></span>
+                    <input type="text" class="form-control pb-0 pt-0"  style="font-size:small;" placeholder="First name" aria-label="firstname" aria-describedby="fullname">
+                    <input type="text" class="form-control pb-0 pt-0" style="font-size:small;" placeholder="Last name" aria-label="lastname" aria-describedby="fullname">
+                </div>
+                <div class="input-group input-group-sm mb-1">
+                    <span class="input-group-text pb-0 pt-0" id="email"><i class="bi bi-envelope-fill"></i></span>
+                    <input type="email" class="form-control pb-0 pt-0" style="font-size:small;" placeholder="sample@example.com" aria-label="emailaddress" aria-describedby="email">
+                </div>
+                <!--Validation-->
+                <div class="input-group input-group-sm mb-1" has-validation>
+                    <span class="input-group-text pb-0 pt-0" id="validationTooltipBirthdatePrepend"><i class="bi bi-balloon-fill"></i></span>
+                    <input type="date" class="form-control pb-0 pt-0" id="validationTooltipBirthdate" aria-describedby="validationTooltipBirthdatePrepend" required>
+                    <div class="invalid-feedback"> Invalid date</div>
+                </div>
+            </div>
+            <!--Cashflow Quadrant-->
+            <div class="container-lg-3 ">
+                <div class="card-header text-dark fw-bold" >
+                    <small> Cashflow Quadrant</small>
+                </div>
+                    <div class="card-body bg-light text-dark">
+                        <div class="input-group input-group-sm justify-content-center">
+                            <div class="input-group-text pb-0 pt-0">
+                                <span class="pb-0 pt-0"> 
+                                    <input class="form-check-input" type="checkbox" aria-label="Equadrant"> <small>Employee </small>
+                                    <div class="vr" ></div>
+                                    <input class="form-check-input" type="checkbox" aria-label="SEquadrant"> <small> Self Employed </small>
+                                </span>
+                            </div>
+                            <div class="input-group-text pb-0 pt-0">
+                                <span> 
+                                    <input class="form-check-input" type="checkbox" aria-label="Iquadrant"> <small> Investor</small> 
+                                    <div class="vr" ></div> 
+                                    <input class="form-check-input" type="checkbox" aria-label="Bquadrant"> <small>Business Owner </small>  
+                                </span>
+                            </div>
+                            <div class="input-group-text pb-0 pt-0">
+                                <span> <input class="form-check-input" type="checkbox" aria-label="Noquadrant"> <small>Unemployed </small> </span>
+                            </div>
+                        </div>
+                    </div> 
+                
+            </div> 
+            <!--Validation-->
+            <div class="input-group has-validation mt-1">
+                <span class="input-group-text pb-0 pt-0" id="validationTooltipIncomePrepend"> <b> ₱ </b> </span>
+                <input type="text" class="form-control pb-0 pt-0" placeholder="Your basic income?" aria-describedby="validationTooltipIncomePrepend" required>
+                <span class="input-group-text pb-0 pt-0" id="validationTooltipIncome"> <small> <b> .00 </b> </small> </span>
+                <div class="invalid-tooltip">Enter amount</div>
+            </div> 
+            <div class="input-group has-validation mt-1">
+                <span class="input-group-text pb-0 pt-0" id="valdiationTooltipRetAgePrepend"> <small> Sample: 60 </small>  </span>
+                <input type="number" class="form-control pb-0 pt-0" placeholder="Retirement age?" aria-describedby="validationTooltipRetAgePrepend" required>
+                <span class="input-group-text pb-0 pt-0" id="salary"> <small> years old </small> </span>
+                <div class="invalid-tooltip">Enter retirement age</div>
+            </div>   
+            <p class="pt-3"><small> <b> Disclaimer: </b><br> 
+            Clicking submit will not store your information elsewhere. </small> </p>
+            <!--CF Quadrant end-->
+            <!--Submit and clear button-->
+            <div class="mt-2"> 
+                <span>
+                    <span class="tultip" data-bs-placement="left" title="Submit">
+                    <button class="btn btn-block border-top border-bottom border-1 border-success my-0 py-0 ps-2" type="submit">
+                        <i class="bi bi-send text-success"></i> 
+                    </button>
+                    </span>
+                    <span class="tultip" data-bs-placement="right" title="Clear">
+                        <button class="btn btn-block border-top border-bottom border-1 border-danger my-0 py-0 ps-2" type="clear">
+                        <i class="bi bi-trash3 text-danger"></i>  
+                    </button>
+                    </span>
+                </span> 
+            </div>
+        </form>
+        </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <script>
+    //   const tooltips = document.querySelectorAll('.tultip')
+    //    tooltips.forEach(t => {
+    //        new bootstrap.Tooltip (t)
+    //    })
+
+        // Disabling form submissions if invalid
+        (() => {
+            'use strict'
+        
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+        
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+        
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
+
+
+
+</body>
+</html>
