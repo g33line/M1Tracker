@@ -270,24 +270,56 @@
         <div class="col-lg-3 pb-5 text-nowrap text-center">  
             <!--Personal Details with form validation-->
             <div class="container-lg-3 text-center border-start">
-                <span class="" id="socialmedia">
-                    <a href="https://www.facebook.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-facebook" data-bs-placement="bottom" title="Facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-instagram" data-bs-placement="bottom" title="Instagram"></i> </a>
-                    <a href="https://www.twitter.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-twitter" data-bs-placement="bottom" title="Twitter"></i> </a>
-                    <a href="https://www.youtube.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-youtube" data-bs-placement="bottom" title="Youtube"></i> </a>
-                    <a href="https://www.linkedin.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-linkedin" data-bs-placement="bottom" title="LinkedIn"></i>  </a>
-                    <a href="https://www.reddit.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-reddit" data-bs-placement="bottom" title="Reddit"></i>  </a>
-                    
-                    <div class="fw-bold text-center">Existing user? </div>
-                    <div>
-                           <button class="btn btn-sm btn-success text-light">Open Tracker</button>
-                       </div>
-                </span>
+                <div class="row">
+                    <span class="" id="socialmedia">
+                        <a href="https://www.facebook.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-facebook" data-bs-placement="bottom" title="Facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-instagram" data-bs-placement="bottom" title="Instagram"></i> </a>
+                        <a href="https://www.twitter.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-twitter" data-bs-placement="bottom" title="Twitter"></i> </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-youtube" data-bs-placement="bottom" title="Youtube"></i> </a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="p-1 icon-link icon-link-hover"> <i class="tultip bi bi-linkedin" data-bs-placement="bottom" title="LinkedIn"></i>  </a>
+                        <a href="https://www.reddit.com/" target="_blank" class="p-1 text-danger icon-link icon-link-hover"> <i class="tultip bi bi-reddit" data-bs-placement="bottom" title="Reddit"></i>  </a>
+                        <!--Existing User-->
+                        <div class="fw-light text-center">For existing user </div>
+                        <span>
+                            <button type="button" class="btn btn-sm btn-success fw-bold my-0 py-0" data-bs-toggle="modal" data-bs-target="#opentrackermodal"><i class="bi bi-folder2-open"></i> Open Tracker</button>
+                        </span>
+                    </span>
+                    <!--Open Tracker Modal-->
+                    <div class="modal fade" id="opentrackermodal" >
+                        <div class="modal-dialog modal-sm ">
+                            <div class="modal-content">
+                                <form class="needs-validation" novalidate>
+                                    <div class="modal-header">
+                                        <h4>Open Existing Tracker</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <!--Modal Validation-->
+                                            <div class="col input-group mb-1" has-validation>
+                                                <span class="input-group-text " id="validationTooltipEmailPrepend"><i class="bi bi-envelope-fill"></i></span>
+                                                <input type="email" class="form-control " style="font-size:small;" id="validationTooltipEmail" aria-describedby="validationTooltipEmailPrepend" required>
+                                                <div class="invalid-feedback"> Required</div>
+                                            </div>
+                                            <div class="col input-group  mb-1" has-validation>
+                                                <span class="input-group-text" id="validationTooltipPasswordPrepend"><i class="bi bi-lock-fill"></i></span>
+                                                <input type="password" class="form-control" id="validationTooltipPassword" aria-describedby="validationTooltipPasswordPrepend" required>
+                                                <div class="invalid-feedback"> Required</div>
+                                            </div>
+                                            <button type="submit" class="btn btn-success">Open Tracker</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div> <!--Modal end-->
+                </div>
                 <hr class="mb-2">
+                <!--New User input-->
                 <form class="row g-1 needs-validation border-2 g-1" novalidate>
                     <div class="row  g-1">
                         <span><p class="mb-1 fw-bold"><small>
-                            <i class="bi bi-pencil-square"></i> ENTER YOUR DETAILS</small></p></span>
+                            NEW USER,  <i class="bi bi-pencil-square"></i>  ENTER YOUR DETAILS</small></p></span>
                         <div class="input-group input-group-sm mt-0 mb-1">
                             <span class="input-group-text pb-0 pt-0" id="fullname"><i class="bi bi-person-fill"></i></span>
                             <input type="text" class="form-control pb-0 pt-0"  style="font-size:small;" placeholder="First name" aria-label="firstname" aria-describedby="fullname">
@@ -428,12 +460,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     
     <script>
-    //   const tooltips = document.querySelectorAll('.tultip')
-    //    tooltips.forEach(t => {
-    //        new bootstrap.Tooltip (t)
-    //    })
-
-        // Disabling form submissions if invalid
+           // Disabling form submissions if invalid
         (() => {
             'use strict'
         
@@ -452,6 +479,13 @@
             }, false)
             })
         })()
+
+        //Tooltip for buttons
+            const tooltips = document.querySelectorAll('.tultip')
+            tooltips.forEach(t => {
+                new bootstrap.Tooltip (t)
+            })
+        
     </script>
 
 
