@@ -192,9 +192,9 @@
                                 </div>
                             </nav>
                             <!--Panel dispaly window-->
-                            <div class="tab-content shadow-lg me-1" id="nav-tabContent">
+                            <div class="tab-content shadow-lg " id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                    <h4 class="ms-3 mt-3">Take charge. Be your own personal money manager!</h4>
+                                    <h4 class="ms-3 pt-3">Take charge. Be your own personal money manager!</h4>
                                     <p class="display-7 ms-3 mb-4">Watch the Money Supply video to know about M1.</p>
                                     <div class="container-lg pb-5">
                                         <div class="row text-center">
@@ -211,7 +211,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="budgetcalc" role="tabpanel" aria-labelledby="budgetcalc-tab" tabindex="0">
                                     <div>
-                                        <h5 class=" ms-3 mt-3 mb-4">
+                                        <h5 class=" ms-3 pt-3 mb-4">
                                             Learn how to budget your income.
                                             <i class="bi bi-piggy-bank" style="font-size: x-large;"></i> </h5>
                                     </div>
@@ -225,7 +225,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="cashflow" role="tabpanel" aria-labelledby="cashflow-tab" tabindex="0">
                                     <div>
-                                        <h5 class=" ms-3 mt-3 mb-4">
+                                        <h5 class=" ms-3 pt-3 mb-4">
                                             Record the money that comes in and out.
                                             <i class="bi bi-wallet2" style="font-size: x-large;"></i> </h5>
                                     </div>
@@ -239,7 +239,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="balsheet" role="tabpanel" aria-labelledby="balsheet-tab" tabindex="0">
                                     <div>
-                                        <h5 class=" ms-3 mt-3 mb-4">
+                                        <h5 class=" ms-3 pt-3 mb-4">
                                             List your assets and liabilities to have a clear picture of your financial condition.
                                             <i class="bi bi-cash-coin" style="font-size: x-large;"></i> </h5>
                                     </div>
@@ -253,7 +253,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="insurance" role="tabpanel" aria-labelledby="insurance-tab" tabindex="0">
                                     <div>
-                                        <h5 class=" ms-3 mt-3 mb-4">
+                                        <h5 class=" ms-3 pt-3 mb-4">
                                             Give yourself some measure of protection against life's uncertainties.
                                             <i class="bi bi-umbrella-fill" style="font-size: x-large;"></i> </h5>
                                     </div>
@@ -294,31 +294,48 @@
                     <div class="modal fade" id="opentrackermodal" >
                         <div class="modal-dialog modal-sm ">
                             <div class="modal-content">
-                                <form class="needs-validation" novalidate>
+                                
                                     <div class="modal-header">
                                         <h4>Open Existing Tracker</h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                     </div>
+                                    <form class="needs-validation" novalidate>
                                     <div class="modal-body">
-                                        <div class="container">
+                                        <div class="container text-center">
                                             <!--Modal Validation-->
-                                            <div class="col input-group mb-1" has-validation>
-                                                <span class="input-group-text " id="validationTooltipEmailPrepend"><i class="bi bi-envelope-fill"></i></span>
-                                                <input type="email" class="form-control " style="font-size:small;" id="validationTooltipEmail" aria-describedby="validationTooltipEmailPrepend" required>
+                                            <div class="col input-group mb-1 has-validation">
+                                                <span class="input-group-text " id="inputGroupPrepend"><i class="bi bi-envelope-fill"></i></span>
+                                                <input type="email" class="form-control " style="font-size:small;" id="validationCustomEmail" aria-describedby="inputGroupPrepend" required>
                                                 <div class="invalid-feedback"> Required</div>
                                             </div>
                                             <div class="col input-group  mb-1" has-validation>
-                                                <span class="input-group-text" id="validationTooltipPasswordPrepend"><i class="bi bi-lock-fill"></i></span>
-                                                <input type="password" class="form-control" id="validationTooltipPassword" aria-describedby="validationTooltipPasswordPrepend" required>
+                                                <span class="input-group-text" id="validationTooltipLoginPasswordPrepend"><i class="bi bi-lock-fill"></i></span>
+                                                <input type="password" class="form-control" id="validationTooltipLoginPassword" aria-describedby="validationTooltipLoginPasswordPrepend" required>
                                                 <div class="invalid-feedback"> Required</div>
                                             </div>
-                                            <button type="submit" class="btn btn-success">Open Tracker</button>
+                                            <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginsuccessful">OK</button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div> <!--Modal end-->
+                    <!--2nd Modal Successful login-->
+                    <div class="modal fade" id="loginsuccessful" >
+                        <div class="modal-dialog modal-sm ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4>Login Successful!</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <a href="allfeatures.html" type="submit" class="btn btn-success">Open Tracker</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <hr class="mb-2 mt-3">
                 <!--New User input-->
